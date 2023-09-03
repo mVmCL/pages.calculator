@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+<style>
+body {
+    background-color: #282828;
+    font-family: 'Arial', sans-serif;
+    color: #eee;
+    text-align: center;
+    padding: 20px;
+}
+
+.calculator {
+    background-color: #393939;
+    padding: 20px;
+    border: 1px solid #232323;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #eee;
+    color: #222;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #fcb045, #fd1d1d, #833ab4);
+    background-size: 600% 100%;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    transition: 0.5s;
+}
+
+button:hover {
+    background-position: 100% 0;
+}
+
+#result {
+    font-size: 22px;
+    color: #fcb045;
+}
+</style>
+
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <input id="length" placeholder="Length in feet">
+            <input id="width" placeholder="Width in feet">
+            <input id="height" placeholder="Height/Depth in feet">
+            
+            <button onclick="calculateConcrete()">Calculate concrete yardage</button>
+            
+            <p id="result"></p>
+        </div>
+
+        <div class="calculator">
+            <input id="diameter" placeholder="Diameter in feet">
+            <input id="depth" placeholder="Depth in feet">
+            
+            <button onclick="calculateConcrete()">Calculate concrete yardage</button>
+            
+            <p id="result"></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
